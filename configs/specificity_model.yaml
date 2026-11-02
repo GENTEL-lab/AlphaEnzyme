@@ -1,0 +1,42 @@
+data:
+  external_missing_policy: error
+model:
+  c_s: 384
+  c_z: 128
+  hidden_size: 384
+  dropout: 0.1
+  pairformer_blocks: 2
+  n_heads: 8
+  n_heads_pair: 4
+  blocks_per_ckpt: 1
+  use_drfp: true
+  drfp_dim: 2048
+  drfp_injection: z_pair_pre_pairformer_global
+  drfp_pair_scale_init: 1.0
+  pooling_mode: ligand_plus_global
+  global_pool_scale_init: 0.35
+  main_input_mode: sz
+  use_extra_features: true
+  extra_feature_dim: 2304
+  extra_hidden_size: 384
+  extra_fusion_mode: branch_gate_sum
+  extra_logit_scale_init: 0.5
+  extra_feature_branch_dims:
+    - 2304
+  extra_feature_branch_names:
+    - protein_pocket
+  extra_token_injection: true
+  extra_branch_scale_init: 1.0
+  context_dim: 0
+  context_len: 0
+  context_scale_init: 1.0
+  context_score_scale_init: 0.25
+  overall_corr_dim: 0
+  overall_corr_scale_init: 0.5
+  use_context_score_bias: true
+  use_overall_corr: true
+  n_transformer_layers: 4
+  n_heads_single: 8
+evaluation:
+  official_eval_precision: fp32
+  official_eval_deduplicate_reaction_enzymes: true

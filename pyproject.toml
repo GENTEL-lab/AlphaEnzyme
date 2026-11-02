@@ -1,0 +1,51 @@
+[project]
+name = "alphaenzyme"
+version = "0.1.0"
+description = "Unified enzyme representation and prediction for specificity, kinetics and mutation."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "Custom research license based on CC BY-NC 4.0" }
+dependencies = [
+  "torch==2.5.1",
+  "numpy==1.26.4",
+  "pandas==3.0.1",
+  "scipy==1.17.1",
+  "scikit-learn==1.8.0",
+  "PyYAML==6.0.3",
+  "tqdm==4.67.3",
+  "easydict==1.13",
+  "decorator==5.2.1",
+  "rdkit==2025.9.6",
+  "xgboost==3.2.0",
+  "drfp==0.3.6",
+  "accelerate==1.13.0",
+  "transformers==4.48.1",
+  "huggingface_hub==0.36.2",
+]
+
+[project.optional-dependencies]
+preprocessing = [
+  "esm==3.2.1.post1",
+  "biotite==1.6.0",
+  "biopython==1.83",
+  "ml-collections==1.1.0",
+  "einops==0.8.2",
+  "lmdb==2.3.0",
+  "optree==0.19.0",
+  "requests==2.33.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+
+[tool.uv]
+package = false

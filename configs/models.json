@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "task": "specificity",
+      "seed": null,
+      "epoch": 3,
+      "file": "data/checkpoints/specificity/specificity_final.pt"
+    },
+    {
+      "task": "kinetics",
+      "seed": 1234,
+      "epoch": 18,
+      "file": "data/checkpoints/kinetics/seed_1234/multitask_epoch18.pt"
+    },
+    {
+      "task": "kinetics",
+      "seed": 2026,
+      "epoch": 2,
+      "file": "data/checkpoints/kinetics/seed_2026/multitask_epoch2.pt"
+    },
+    {
+      "task": "kinetics",
+      "seed": 3407,
+      "epoch": 16,
+      "file": "data/checkpoints/kinetics/seed_3407/multitask_epoch16.pt"
+    }
+  ],
+  "kinetics_prediction_policy": "mean of seeds 1234, 2026, 3407",
+  "kinetics_head": "task_moe_gate",
+  "mutation_release": "data/checkpoints/mutation_final.pt is a single-file bundle of the 328 component fits used by the fusion recipe.",
+  "specificity": {
+    "checkpoint": "data/checkpoints/specificity/specificity_final.pt",
+    "architecture": "compressed classifier + alpha_repr head"
+  }
+}

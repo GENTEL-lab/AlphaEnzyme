@@ -1,0 +1,20 @@
+{
+  "checkpoint": "data/checkpoints/specificity/specificity_final.pt",
+  "score_head": "alpha_repr_specificity_head",
+  "eval_precision": "fp32",
+  "seed": 42,
+  "drfp_similarity_gate": {
+    "low": 0.45,
+    "high": 0.95,
+    "power": 6
+  },
+  "deduplicate_reaction_enzymes": true,
+  "release_inputs": {
+    "embedding_dir": "data/inputs/specificity/features/pairformer/test",
+    "json_dir": "data/inputs/specificity/features/json/enzyme_405",
+    "csv": "data/inputs/specificity/eval/eval.csv",
+    "drfp": "data/inputs/specificity/features/drfp/reaction_fingerprints.pkl",
+    "protein_pocket_bank": "data/inputs/specificity/features/protein_pocket/test_protein_pocket_mix.npz",
+    "train_reactions": "data/inputs/specificity/tables/train.csv"
+  }
+}

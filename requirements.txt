@@ -1,0 +1,17 @@
+# pip fallback; pyproject.toml + uv.lock are the canonical uv environment.
+# Tested core training and inference environment: Python 3.11, CUDA 12.4.
+torch==2.5.1
+numpy==1.26.4
+pandas==3.0.1
+scipy==1.17.1
+scikit-learn==1.8.0
+PyYAML==6.0.3
+tqdm==4.67.3
+easydict==1.13
+decorator==5.2.1
+rdkit==2025.9.6
+xgboost==3.2.0
+drfp==0.3.6
+accelerate==1.13.0
+transformers==4.48.1
+huggingface_hub==0.36.2

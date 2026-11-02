@@ -1,0 +1,514 @@
+{
+  "upstream": "https://github.com/bytedance/Protenix",
+  "snapshot": "Author-used runtime source snapshot; upstream Git revision was not retained in the supplied archive.",
+  "compatible_checkpoint": "protenix_base_20250630_v1.0.0.pt",
+  "files": [
+    {
+      "file": "protenix/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/constants.py",
+      "sha256": "10a526bd64e1206052c307239ff92109c245aec3d2c10e6ef0d4deae295092a4",
+      "bytes": 44150
+    },
+    {
+      "file": "protenix/data/tokenizer.py",
+      "sha256": "ad70ef6e5a0c976132ee1e96af71b8ba0d27b92ab9d9284a1c68326ca8d1a265",
+      "bytes": 6807
+    },
+    {
+      "file": "protenix/data/utils.py",
+      "sha256": "bb0d4a00f312c82089f904b98ed95b58f54befb948a93d3d3bc6f883e36d842c",
+      "bytes": 46304
+    },
+    {
+      "file": "protenix/data/tools/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/tools/common.py",
+      "sha256": "833ceeb47c1460a1ac7bed498a536284f30e6af3e9bbf43a74cd03aefdd6c14b",
+      "bytes": 7032
+    },
+    {
+      "file": "protenix/data/tools/kalign.py",
+      "sha256": "df068344839cda5d89df8bffe885b8b7a19918828aa3a21622b5530c76eaa48f",
+      "bytes": 5825
+    },
+    {
+      "file": "protenix/data/tools/search.py",
+      "sha256": "2a33e74ddfb42d14026b2c2b219438babf9337f2e59c5754b36c9ccee7bb576c",
+      "bytes": 18489
+    },
+    {
+      "file": "protenix/data/constraint/__init__.py",
+      "sha256": "9448792dbd9aa44112cb16e9cdb77cca263cd50193ab8c7761d6a51d6d0d4d29",
+      "bytes": 104
+    },
+    {
+      "file": "protenix/data/constraint/constraint_featurizer.py",
+      "sha256": "a413febd327df54065dd4cc1786870f7f617f29a4e46214f9edaf472f99eaab4",
+      "bytes": 95598
+    },
+    {
+      "file": "protenix/data/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/core/ccd.py",
+      "sha256": "f8262a29130c453f6d0a84c1752f4e11062c77df2baba686964018cfd5f88714",
+      "bytes": 15934
+    },
+    {
+      "file": "protenix/data/core/featurizer.py",
+      "sha256": "1dfbeb90edbd6c924f025be6af6e43935c16e20cde5832c38f58d6392ad13b1b",
+      "bytes": 34476
+    },
+    {
+      "file": "protenix/data/core/filter.py",
+      "sha256": "c2642455544cf8e96d95c8bb0e789b9e02acbe88c42251a456f1a0fd3c12625e",
+      "bytes": 27516
+    },
+    {
+      "file": "protenix/data/core/parser.py",
+      "sha256": "74fb15bc0a3999d50b2c194631e1df26f36b6461d56b445693e082ffbaab5edf",
+      "bytes": 140261
+    },
+    {
+      "file": "protenix/data/core/substructure_perms.py",
+      "sha256": "da92fbb4fcaca716a9e7f32eff4119375e131b4684ca5a33f84c5cdcc98709a6",
+      "bytes": 9823
+    },
+    {
+      "file": "protenix/data/esm/__init__.py",
+      "sha256": "42489adb08de889bb649185121b7d86b2aed3b4ea89b1ffdaa2d8d8bdf87f413",
+      "bytes": 179
+    },
+    {
+      "file": "protenix/data/esm/compute_esm.py",
+      "sha256": "ce3fc45709d088ecba45fb49c8dafd4882a74401a24f7df9a91f8115091a9363",
+      "bytes": 7605
+    },
+    {
+      "file": "protenix/data/esm/esm_featurizer.py",
+      "sha256": "2ac3a6fa513e84a736f14e5d2d57ad156014b5cb7e785e2ca17e6f9d896ea657",
+      "bytes": 7905
+    },
+    {
+      "file": "protenix/data/inference/json_parser.py",
+      "sha256": "9c64fa36a22e6e53911a0d1a3bdbbb6abab56dc585a3768788736a16989fe02f",
+      "bytes": 20802
+    },
+    {
+      "file": "protenix/data/inference/json_to_feature.py",
+      "sha256": "9dbe4297e1af223e53049aeefef85672f61bc367a4b9018b470e0535a2a21b0f",
+      "bytes": 14115
+    },
+    {
+      "file": "protenix/data/inference/__init__.py",
+      "sha256": "4fc0d0fa66bb4af1fdd09a252f08601a60d8e4aa37b79d1d6410997fe00714eb",
+      "bytes": 1489
+    },
+    {
+      "file": "protenix/data/inference/infer_dataloader.py",
+      "sha256": "1a2dfa12152443300aaf92af16ca3f36332d37d27e1e5ecbaf8b01785a1fb802",
+      "bytes": 10806
+    },
+    {
+      "file": "protenix/data/inference/json_maker.py",
+      "sha256": "de9fdfc297886d924d1c207d8e1e79109087f32339c1c0ac25469bd32e8caf29",
+      "bytes": 13044
+    },
+    {
+      "file": "protenix/data/msa/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/msa/msa_featurizer.py",
+      "sha256": "cac245cd3165fc3ca2318ffa8dba0b77ac961024f09e6b3dec48d768001e8fd6",
+      "bytes": 25613
+    },
+    {
+      "file": "protenix/data/msa/msa_utils.py",
+      "sha256": "9393fa498a30c10872b4791cace552f4f473e38bec23cfe1810b7876af7db819",
+      "bytes": 16271
+    },
+    {
+      "file": "protenix/data/pipeline/__init__.py",
+      "sha256": "61b7184ce678a06c93ae88d2e1a27d00fa3621d3da15959f7b276c353e63bc2a",
+      "bytes": 197
+    },
+    {
+      "file": "protenix/data/pipeline/data_pipeline.py",
+      "sha256": "b071b38e741b090205a35da8eba0139d62e04cf4bed73c8b27ec3ccf53bffc99",
+      "bytes": 14697
+    },
+    {
+      "file": "protenix/data/pipeline/dataloader.py",
+      "sha256": "2f6a68ba8a85c130001ecc18033722e86d99054ecc3954bb995578bb47e5cc29",
+      "bytes": 13202
+    },
+    {
+      "file": "protenix/data/pipeline/dataset.py",
+      "sha256": "9802ab3bbe661c76da50336410c54298963facab002e5a6aa49e978fb75a1f51",
+      "bytes": 47684
+    },
+    {
+      "file": "protenix/data/template/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/data/template/template_featurizer.py",
+      "sha256": "728120aa433ef76dd064d200d1bb6f3304777c09844377ad1e634920d2aa28c0",
+      "bytes": 28078
+    },
+    {
+      "file": "protenix/data/template/template_parser.py",
+      "sha256": "1d2e0a5c3ee7b44d1f5b1dcf0e4fadb0d4114f46f5c34e302b3fe4be058ecbe8",
+      "bytes": 21830
+    },
+    {
+      "file": "protenix/data/template/template_utils.py",
+      "sha256": "1a8c5beee2ea37a33b9881a71605626f7b254e83b844c32d58b120a9b6770861",
+      "bytes": 34396
+    },
+    {
+      "file": "protenix/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/utils/cropping.py",
+      "sha256": "5a6045b2df53822313bd67a792972452b35cef8da5f72cfdf27640d0c8b9ab0b",
+      "bytes": 27311
+    },
+    {
+      "file": "protenix/utils/distributed.py",
+      "sha256": "10e8a47fe679cfc8844534e45f032d9908bb16fb8ab714e90d74ebfc439fbbb2",
+      "bytes": 2714
+    },
+    {
+      "file": "protenix/utils/file_io.py",
+      "sha256": "ff17fac71adf30131790328c008b38de549357d42259d40ef9fcfd38c7f6947b",
+      "bytes": 11095
+    },
+    {
+      "file": "protenix/utils/geometry.py",
+      "sha256": "18bf79f41026e8211196ae8d789849252e5b93f54c19ca94179ed8e7e6ca9622",
+      "bytes": 2322
+    },
+    {
+      "file": "protenix/utils/logger.py",
+      "sha256": "d4597c92f044ea5a3c9954e44824928aeb7f6f222e0050754eb495025280995a",
+      "bytes": 2930
+    },
+    {
+      "file": "protenix/utils/lr_scheduler.py",
+      "sha256": "a4758ed1e3df0d623b5ca3c829edb88dd027624178ecc17aea6baf43b5487ba0",
+      "bytes": 6128
+    },
+    {
+      "file": "protenix/utils/metrics.py",
+      "sha256": "e69dbd717875f876ab21e33c17fa7eaa6a7d11a4543dd6d54c1ce63b188dac71",
+      "bytes": 2938
+    },
+    {
+      "file": "protenix/utils/scatter_utils.py",
+      "sha256": "5a4683c560140529f2ffc9e948206d46d80586c2a06ca17a9d498fc2e8917dad",
+      "bytes": 6967
+    },
+    {
+      "file": "protenix/utils/seed.py",
+      "sha256": "dfb5611fd421d1316eafde5ecc82879a736682b4613ad9465a3982059148e744",
+      "bytes": 1496
+    },
+    {
+      "file": "protenix/utils/torch_utils.py",
+      "sha256": "f10a9e3a8064fc0b30432869375ffd7b0021486b09249d093b136cd8861e9629",
+      "bytes": 7740
+    },
+    {
+      "file": "protenix/utils/training.py",
+      "sha256": "16a1439971a2996694761b66a89a0bd05574cd3140f6737ac29835d3edaff0a5",
+      "bytes": 5619
+    },
+    {
+      "file": "protenix/utils/permutation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/utils/permutation/atom_permutation.py",
+      "sha256": "428dfb0e6e7362435c5132b064888e63751a58d1e63f460053258f48a7527fca",
+      "bytes": 33354
+    },
+    {
+      "file": "protenix/utils/permutation/permutation.py",
+      "sha256": "4684fcf24b0fa01e58703d907db6d4cca9e51cf9ed50781a7723244497c2682e",
+      "bytes": 20058
+    },
+    {
+      "file": "protenix/utils/permutation/utils.py",
+      "sha256": "22549e0cc17fecde6e37804a0c651da9a1d62f20a6c4ce12378b30bbe31685b7",
+      "bytes": 4930
+    },
+    {
+      "file": "protenix/utils/permutation/chain_permutation/__init__.py",
+      "sha256": "e9b9411bbb55acd7f59db7e767268d7b24d5d2ce46552fc7b447366ac8b1c182",
+      "bytes": 5177
+    },
+    {
+      "file": "protenix/utils/permutation/chain_permutation/heuristic.py",
+      "sha256": "63164ba4f8c33b2877c30af36ae0e2fb0db296016b026cf43c9ce2557bcc90e9",
+      "bytes": 36759
+    },
+    {
+      "file": "protenix/utils/permutation/chain_permutation/pocket_based_permutation.py",
+      "sha256": "854c650f45eec574e3dbd4fbb958d4b6330341bf5498cfa69765f8e1902249c9",
+      "bytes": 10774
+    },
+    {
+      "file": "protenix/utils/permutation/chain_permutation/utils.py",
+      "sha256": "7a8d7d0882f6ff7e8db25ede61bb23c5439d46a3b6ae8e865a4e229dda69707d",
+      "bytes": 2309
+    },
+    {
+      "file": "protenix/metrics/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/metrics/clash.py",
+      "sha256": "dfd95c59ec57c9556f28514839405eaa35209130514be012f360184bc5082601",
+      "bytes": 11175
+    },
+    {
+      "file": "protenix/metrics/lddt_metrics.py",
+      "sha256": "6b7a806dbc1f536f502905d61f58d5c844eea8b90b8f21606e02275c8ba8d145",
+      "bytes": 9927
+    },
+    {
+      "file": "protenix/metrics/rmsd.py",
+      "sha256": "23ec3fc1993fafa6323fb6fc2a4662212e5f7ba667f12b3e9922bf8bbac6ff46",
+      "bytes": 9206
+    },
+    {
+      "file": "protenix/model/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/model/generator.py",
+      "sha256": "84338db0cda852d859e498c9aee972747a319e4e701cfae271ac882215fe25ae",
+      "bytes": 14213
+    },
+    {
+      "file": "protenix/model/loss.py",
+      "sha256": "bce5a63dbdfaebae5261a874d9302ef83ce2dbae5f6338cc3399565be19bb3b0",
+      "bytes": 73723
+    },
+    {
+      "file": "protenix/model/protenix.py",
+      "sha256": "c4250bd93d592a11d9019285cfd84b71b26fa6a8aca6944a239fb31e0337e179",
+      "bytes": 38186
+    },
+    {
+      "file": "protenix/model/sample_confidence.py",
+      "sha256": "8c9aed0f3c9738809b877b047f867f1df7731b16571f14c3319ebdd51997b888",
+      "bytes": 30539
+    },
+    {
+      "file": "protenix/model/utils.py",
+      "sha256": "81784461673c929002f59a43c4a8980e7c638a01e0d0a7d8ec14263b0c76f5ef",
+      "bytes": 27542
+    },
+    {
+      "file": "protenix/model/layer_norm/__init__.py",
+      "sha256": "1c21a7a0bf9787f07c68caf16dfe80c7451bc28ff138bc8510cb9e0712a4333d",
+      "bytes": 678
+    },
+    {
+      "file": "protenix/model/layer_norm/layer_norm.py",
+      "sha256": "936c249eae5fc2211b0cc7abdd1e1d0bbddfd2beb0748403d8c1d341baee8f72",
+      "bytes": 8757
+    },
+    {
+      "file": "protenix/model/layer_norm/torch_ext_compile.py",
+      "sha256": "d197ada0402577d03e07641df54453efeed918d253b11dcdadb273beb5003fbd",
+      "bytes": 1843
+    },
+    {
+      "file": "protenix/model/modules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/model/modules/confidence.py",
+      "sha256": "064375730d100f1536cf1a2061fa08ad0a039f21c4bf2965275a74646d33cebd",
+      "bytes": 14404
+    },
+    {
+      "file": "protenix/model/modules/diffusion.py",
+      "sha256": "c92001aeb046ea9a5dbbc8120a5487c76d0497c52ff7fe178143f443dd4cc988",
+      "bytes": 24253
+    },
+    {
+      "file": "protenix/model/modules/embedders.py",
+      "sha256": "05e9e8d7bc8e9f917a6cadb3534b4b95764ea9968c19bc38d4743a29daf982f8",
+      "bytes": 16213
+    },
+    {
+      "file": "protenix/model/modules/frames.py",
+      "sha256": "375bc7478c566338c5bce6e325f7dd912c1865df51bc373e1b9a21477a1f80b1",
+      "bytes": 3853
+    },
+    {
+      "file": "protenix/model/modules/head.py",
+      "sha256": "5b79308417267c7072b9d220c78970d458ea44b94450e5e3f14140459331f1b4",
+      "bytes": 1849
+    },
+    {
+      "file": "protenix/model/modules/pairformer.py",
+      "sha256": "8b1c28dcecdf9dcc3c454aedc953845e7fe1f615a16a619a8b647d4a4e8d3ed3",
+      "bytes": 42321
+    },
+    {
+      "file": "protenix/model/modules/primitives.py",
+      "sha256": "1d67340ae2a7a614f3e77cfb7f6b18522d735cfe5798abe83b74a77f7698336d",
+      "bytes": 34879
+    },
+    {
+      "file": "protenix/model/modules/transformer.py",
+      "sha256": "4d4d56b0fdf0f0fd6eff2cbcafd4a2f35b24f217746e671cac4e1238ae649ed6",
+      "bytes": 38600
+    },
+    {
+      "file": "protenix/model/tri_attention/__init__.py",
+      "sha256": "f738f69a1e4c6036957b5e852e139629bf3f3cf29a0a88220e8c1b00cb19c7eb",
+      "bytes": 4398
+    },
+    {
+      "file": "protenix/model/tri_attention/autotune.py",
+      "sha256": "4da7f146f0c7e399b624ed818354c6e5044213ff873a3b995f66d3af988f0de8",
+      "bytes": 10748
+    },
+    {
+      "file": "protenix/model/tri_attention/autotune_helpers.py",
+      "sha256": "e9f1a96c63a0218b2bd25198d9aa31a9165a0ec20534e5607a0692995d3743d7",
+      "bytes": 5826
+    },
+    {
+      "file": "protenix/model/tri_attention/backward.py",
+      "sha256": "fac61c5601a2b0fe5d6f236f5de0e59a3382e094115f8654c0f9d675c14eea46",
+      "bytes": 16559
+    },
+    {
+      "file": "protenix/model/tri_attention/forward.py",
+      "sha256": "42fc170c998d3170fbf5781837a71b7d7b9f7e569be7554f39287236a7d4ae93",
+      "bytes": 5198
+    },
+    {
+      "file": "protenix/model/tri_attention/op.py",
+      "sha256": "e0942e6d6b06607ad399ee972465edbcb868fa1328cf39322730f3b3e4a4135b",
+      "bytes": 4990
+    },
+    {
+      "file": "protenix/model/triangular/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/model/triangular/layers.py",
+      "sha256": "1928d7fcb21750ce613949461ecd8ab5ff2323c19761be5b2d6f24064c3c1bbd",
+      "bytes": 23687
+    },
+    {
+      "file": "protenix/model/triangular/triangular.py",
+      "sha256": "4700a0abe41253a44a6504b1d11051010e5a67f9b63c29fd7535dfb033337ca2",
+      "bytes": 27531
+    },
+    {
+      "file": "protenix/web_service/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "protenix/web_service/colab_request_parser.py",
+      "sha256": "0b781cb10a1cd92f19a4924fb7273f97895c9bbb737aa741d241e4805d273d9c",
+      "bytes": 20759
+    },
+    {
+      "file": "protenix/web_service/colab_request_utils.py",
+      "sha256": "11cf40531d6af7b335c21846d4199033ec1964b7cb6a649e122c869238cba1e7",
+      "bytes": 12927
+    },
+    {
+      "file": "protenix/web_service/dependency_url.py",
+      "sha256": "f65331d36221a8c3fd715ff8760b39dda9c880b88054216b04d5e39277478fd8",
+      "bytes": 2808
+    },
+    {
+      "file": "protenix/web_service/prediction_visualization.py",
+      "sha256": "a0f149784b2efaafae217c11610cab7471f85a29be61b36df1907ada1abb107c",
+      "bytes": 13148
+    },
+    {
+      "file": "protenix/web_service/viewer.py",
+      "sha256": "d72c11014161b34e5d1fd9f77ec4e76e19264858b9db56600616f61591a68ec3",
+      "bytes": 21052
+    },
+    {
+      "file": "protenix/config/__init__.py",
+      "sha256": "50d0fc5cbb80a0ef4c68227b9a523b0042ce101f1954126d9b4dcc0ffb5f84a5",
+      "bytes": 673
+    },
+    {
+      "file": "protenix/config/config.py",
+      "sha256": "22c134a75bf00c98b1ec85d9fb753830bca97e8b782a3c90ec60109087854c7e",
+      "bytes": 10704
+    },
+    {
+      "file": "protenix/config/extend_types.py",
+      "sha256": "279c6eff86e90ca22bbd91e904a1c748773a745b92ab0735d0ec7325f1baeba4",
+      "bytes": 1598
+    },
+    {
+      "file": "configs/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "configs/configs_base.py",
+      "sha256": "13c36fb5624bb804aee78cd95d04b08832dcabc7de8378886dd99a67251d66b9",
+      "bytes": 13851
+    },
+    {
+      "file": "configs/configs_data.py",
+      "sha256": "4699fc39387203bb861437dfa2dec89cc73e375539d37b2140c2b82fa6796e69",
+      "bytes": 9411
+    },
+    {
+      "file": "configs/configs_inference.py",
+      "sha256": "0a1b8f79f6b770af74d3e27f3b60b21f05848aa3477bc33ca9b16abcd7755bab",
+      "bytes": 1420
+    },
+    {
+      "file": "configs/configs_model_type.py",
+      "sha256": "d7f59f1b2d83b3657555893be085502b04c38b21a069e8ebb4b05229a8f12552",
+      "bytes": 9491
+    }
+  ],
+  "modifications": "Files copied verbatim; generated bytecode omitted.",
+  "build_artifacts": "A prebuilt Linux x86_64 CUDA layer-norm extension is included for the tested PyTorch 2.5.1/CUDA 12.4 environment. The source is under layer_norm/kernel; torch_ext_compile.py can rebuild it for another environment."
+}

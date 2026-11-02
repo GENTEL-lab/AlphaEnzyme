@@ -1,0 +1,56 @@
+{
+  "name": "AlphaEnzyme mutation fusion (Fig. 3)",
+  "method_id": "fixed_blend_5_w0.50__quantile_power_0.5",
+  "data_scope": "8 proteins / 41165 variants / fixed 6-train-1-valid-1-test protein folds",
+  "recipe": {
+    "global_weight": 0.5,
+    "site_weight": 0.5,
+    "component_seed_handling": "all 3 seeds averaged; deterministic ridge used once",
+    "calibration": "((average_rank(blend)-0.5)/library_size)^0.5",
+    "requires_whole_unlabelled_library": true
+  },
+  "component_groups": {
+    "global_parents": [
+      "original",
+      "g_nn_paired",
+      "g_nn_paired_within",
+      "g_nn_paired_meta",
+      "g_nn_raw",
+      "g_xgb_rank_paired_meta",
+      "g_xgb_rank_paired",
+      "g_xgb_reg_raw",
+      "g_xgb_reg_paired_meta",
+      "g_ridge"
+    ],
+    "site_parents": [
+      "original",
+      "s_nn_site_pair",
+      "s_nn_global_site",
+      "s_xgb_site_rank",
+      "s_xgb_global_site_reg",
+      "s_ridge"
+    ],
+    "stochastic_components": [
+      "original",
+      "g_nn_paired",
+      "g_nn_paired_within",
+      "g_nn_paired_meta",
+      "g_nn_raw",
+      "g_xgb_rank_paired_meta",
+      "g_xgb_rank_paired",
+      "g_xgb_reg_raw",
+      "g_xgb_reg_paired_meta",
+      "s_nn_site_pair",
+      "s_nn_global_site",
+      "s_xgb_site_rank",
+      "s_xgb_global_site_reg"
+    ],
+    "ridge_components": ["g_ridge", "s_ridge"],
+    "seeds": [1234, 2026, 3407],
+    "folds": [0, 1, 2, 3, 4, 5, 6, 7],
+    "expected_component_fits": 328
+  },
+  "checkpoint_bundle": "data/checkpoints/mutation_final.pt",
+  "input_table": "data/inputs/mutation/component_inputs_unlabelled.csv",
+  "labels": "data/inputs/mutation/inputs/rows.csv"
+}

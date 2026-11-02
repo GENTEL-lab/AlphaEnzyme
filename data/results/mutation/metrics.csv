@@ -1,0 +1,2 @@
+method,SCC,PCC,NDCG20,NDCG50,n,top3_count,top5_count,top3_frequency,top5_frequency
+fixed_blend_5_w0.50__quantile_power_0.5,0.5229427629816905,0.5307676212688475,0.6187229223128503,0.6606908300070082,41165,11,14,0.34375,0.4375

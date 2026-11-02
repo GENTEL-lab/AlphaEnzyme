@@ -1,0 +1,11 @@
+# pip fallback; use `uv sync --frozen --extra preprocessing` with uv.
+# Additional packages for raw sequence/reaction feature generation.
+-r requirements.txt
+esm==3.2.1.post1
+biotite==1.6.0
+biopython==1.83
+ml-collections==1.1.0
+einops==0.8.2
+lmdb==2.3.0
+optree==0.19.0
+requests==2.33.0

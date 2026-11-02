@@ -1,0 +1,16 @@
+{
+  "epochs": 3,
+  "steps_per_epoch": 3000,
+  "hidden_size": 1024,
+  "layers": 3,
+  "dropout": 0.04,
+  "lr": 2e-05,
+  "weight_decay": 0.002,
+  "pairwise_weight": 6.0,
+  "bce_weight": 0.0,
+  "distill_weight": 0.5,
+  "base_logit_residual_init": 0.9724,
+  "train_base_logit_residual": true,
+  "seed": 62514,
+  "save_every": 0
+}
